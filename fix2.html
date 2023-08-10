@@ -1,0 +1,39 @@
+
+
+/* sticky footer: convert the the sign in to join community button to sticky footer in mobile view  */
+<style>
+@media (max-width: 767px) {
+  #registration {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999; /* Optionally set a higher z-index to ensure it stays on top */
+    transform: translateY(0);
+  }
+}
+    </style>
+
+
+
+
+<!-- new code for sign in button to stick in footer  -->
+
+<!-- approach:- in the 2nd contenet-container fluid of My community1 page on the div class row element
+deleted left and right pull column 
+added in the row(same div class row element ) sdg icon and outside the row element added below codes and put media queries to make it responsive on mobile view; -->
+
+
+<div class="col-md-6" id="registration">
+    <div style="width: 26em;margin-top:2em;margin-bottom:2em;margin-left: -2em; box-shadow:0 0 0 0.5px #777; " class="card">
+        <div class="card-body text-center">
+            <h3 class="card-title">Register to join our Community</h3> 
+        </div>
+     <span class="nav-divider" style="background-color:#777;"></span>
+    
+
+        <div class="card-body text-center">
+        <a class="btn btn-success" style="background: #00d179; color:white; padding:0.8rem  2rem;" href="/Login?origin=https%3A%2F%2Fflocardstaging.duckdns.org%2FFC%2FMyCommunity1">Sign In To Join Community</a>
+      </div>
+    </div>
+            
+    </div>
